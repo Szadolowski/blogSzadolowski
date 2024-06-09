@@ -1,0 +1,77 @@
+.mainWelcome {
+  background-color: rgba(116, 101, 79, 1);
+  background-image: linear-gradient(
+    120deg,
+    rgba(116, 101, 79, 1) 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 75%,
+    rgba(35, 31, 24, 1) 100%
+  );
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6%;
+  box-sizing: border-box;
+}
+
+.mainWelcome h2 {
+  font-family: "resistsans-dsplmediumoblique";
+  font-size: 80px;
+  width: 30%;
+}
+
+.mainWelcome h2:nth-child(1) {
+  text-align: left;
+}
+
+.mainWelcome h2:nth-child(2) {
+  text-align: right;
+}
+
+.mainWelcome button {
+  height: 20%;
+  background-color: var(--color-dark-brown);
+  border-radius: 50px;
+  height: 100px;
+  width: 150px;
+  border: 0;
+
+  -webkit-box-shadow: inset 3px 3px 13px -11px rgba(255, 255, 255, 1);
+  -moz-box-shadow: inset 3px 3px 13px -11px rgba(255, 255, 255, 1);
+  box-shadow: inset 3px 3px 13px -11px rgba(255, 255, 255, 1);
+
+  -webkit-box-shadow: 5px 5px 15px -8px rgba(154, 134, 106, 1);
+  -moz-box-shadow: 5px 5px 15px -8px rgba(154, 134, 106, 1);
+  box-shadow: 5px 5px 15px -8px rgba(154, 134, 106, 1);
+
+  color: #9a866a;
+  font-family: "resistsans-dsplmediumoblique";
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.mainBlock {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  width: 80%;
+}
+
+.nav1 {
+  grid-area: 1 / 1 / 7 / 4;
+}
+.nav2 {
+  grid-area: 1 / 4 / 4 / 8;
+}
+.nav3 {
+  grid-area: 4 / 4 / 7 / 6;
+}
+.nav4 {
+  grid-area: 4 / 6 / 7 / 8;
+}

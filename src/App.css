@@ -1,1 +1,21 @@
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.topBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 50%;
+
+  margin-bottom: 50px;
+}
+
+.topBar h1:hover,
+.topBar img:hover {
+  cursor: pointer;
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import MainSection from "./components/MainSection/MainSection";
 import "./App.css";
 
 function App() {
@@ -6,7 +7,21 @@ function App() {
 
   const TopBar = () => {
     return (
-      <>
+      <section className="topBar">
+        <h1
+          onClick={() => {
+            setSiteStatus(2);
+          }}
+        >
+          about us
+        </h1>
+        <h1
+          onClick={() => {
+            setSiteStatus(3);
+          }}
+        >
+          product
+        </h1>
         <img
           src="logo.png"
           width="400px"
@@ -16,38 +31,27 @@ function App() {
         />
         <h1
           onClick={() => {
-            setSiteStatus(2);
+            setSiteStatus(4);
           }}
         >
-          info
+          contact
         </h1>
         <h1
           onClick={() => {
-            setSiteStatus(3);
+            setSiteStatus(5);
           }}
         >
-          product
+          media
         </h1>
-      </>
+      </section>
     );
   };
 
-  const MainSecton = () => {
-    if (siteStatus === 1) {
-      return <h2>test1</h2>;
-    }
-    if (siteStatus === 2) {
-      return <h2>test2</h2>;
-    }
-    if (siteStatus === 3) {
-      return <h2>test3</h2>;
-    }
-  };
   return (
-    <>
+    <section className="element">
       <TopBar />
-      <MainSecton />
-    </>
+      <MainSection n={siteStatus} />
+    </section>
   );
 }
 
